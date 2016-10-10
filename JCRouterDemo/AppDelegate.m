@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "JCRouter.h"
+
+#import "PageOneViewController.h"
+#import "PageTwoViewController.h"
+#import "PageThreeViewController.h"
+#import "PresentViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +23,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //注册Router
+    [[JCRouter shareRouter] mapKey:@"pageOne/:info/:userName" toController:[PageOneViewController class]];
+    [[JCRouter shareRouter] mapKey:@"pageTwo/:pageIndex" toController:[PageTwoViewController class]];
+    [[JCRouter shareRouter] mapKey:@"pageThree" toController:[PageThreeViewController class]];
+    [[JCRouter shareRouter] mapKey:@"presentPage" toController:[PresentViewController class]];
+    
     return YES;
 }
 

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BeM-Bz-4IJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Present View Controller-->
+        <scene sceneID="prw-Kw-Y9Z">
+            <objects>
+                <viewController id="BeM-Bz-4IJ" customClass="PresentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CeA-3w-Zdz"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ev-jJ-GjC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bku-fz-hL2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqH-7G-cJf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Eap-B2-8HS"/>
+                                    <constraint firstAttribute="width" constant="65" id="c7Y-bF-hvM"/>
+                                </constraints>
+                                <state key="normal" title="dismiss"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Eap-B2-8HS"/>
+                                        <exclude reference="c7Y-bF-hvM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Eap-B2-8HS"/>
+                                        <include reference="c7Y-bF-hvM"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onClickDismiss:" destination="BeM-Bz-4IJ" eventType="touchUpInside" id="69q-js-Jv7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tf-fw-Q07">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hDg-Sr-SWQ"/>
+                                    <constraint firstAttribute="width" constant="230" id="lkA-Zd-hWP"/>
+                                </constraints>
+                                <state key="normal" title="present到一个手写ViewController"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hDg-Sr-SWQ"/>
+                                        <exclude reference="lkA-Zd-hWP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="hDg-Sr-SWQ"/>
+                                        <include reference="lkA-Zd-hWP"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onClickPresent:" destination="BeM-Bz-4IJ" eventType="touchUpInside" id="4XM-Xo-JIW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dl2-ck-aVR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YLT-jU-LrE"/>
+                                    <constraint firstAttribute="width" constant="230" id="zJz-uR-VED"/>
+                                </constraints>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+cHVzaOWIsHhpYuWIm+W7uueahFZpZXdDb250cm9sbGVyEBA
+</string>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YLT-jU-LrE"/>
+                                        <exclude reference="zJz-uR-VED"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="YLT-jU-LrE"/>
+                                        <include reference="zJz-uR-VED"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onClickPush:" destination="BeM-Bz-4IJ" eventType="touchUpInside" id="G2Y-Wf-Jaa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcf-Fg-7rD">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="GMs-ED-cFe"/>
+                                    <constraint firstAttribute="height" constant="30" id="RUe-dU-J6I"/>
+                                </constraints>
+                                <state key="normal" title="present到一个带导航控制器的ViewController"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GMs-ED-cFe"/>
+                                        <exclude reference="RUe-dU-J6I"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GMs-ED-cFe"/>
+                                        <include reference="RUe-dU-J6I"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onClickPresentNav:" destination="BeM-Bz-4IJ" eventType="touchUpInside" id="A8z-da-f4W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GqH-7G-cJf" firstAttribute="centerX" secondItem="Bku-fz-hL2" secondAttribute="centerX" id="7fx-Yy-zny"/>
+                            <constraint firstItem="9tf-fw-Q07" firstAttribute="top" secondItem="GqH-7G-cJf" secondAttribute="bottom" constant="25" id="ScE-Ir-dUH"/>
+                            <constraint firstItem="Qcf-Fg-7rD" firstAttribute="top" secondItem="Dl2-ck-aVR" secondAttribute="bottom" constant="25" id="Ycv-Zt-z2p"/>
+                            <constraint firstItem="Dl2-ck-aVR" firstAttribute="top" secondItem="9tf-fw-Q07" secondAttribute="bottom" constant="25" id="a2g-he-S7z"/>
+                            <constraint firstItem="9tf-fw-Q07" firstAttribute="centerX" secondItem="Bku-fz-hL2" secondAttribute="centerX" id="cRe-pp-ADb"/>
+                            <constraint firstItem="Qcf-Fg-7rD" firstAttribute="centerX" secondItem="Bku-fz-hL2" secondAttribute="centerX" id="fUq-zr-oHP"/>
+                            <constraint firstItem="Dl2-ck-aVR" firstAttribute="centerX" secondItem="Bku-fz-hL2" secondAttribute="centerX" id="jAv-kB-ev3"/>
+                            <constraint firstItem="GqH-7G-cJf" firstAttribute="top" secondItem="CeA-3w-Zdz" secondAttribute="bottom" constant="80" id="tg8-gZ-3hp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GqH-7G-cJf"/>
+                                <exclude reference="9tf-fw-Q07"/>
+                                <exclude reference="Dl2-ck-aVR"/>
+                                <exclude reference="Qcf-Fg-7rD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ScE-Ir-dUH"/>
+                                <exclude reference="cRe-pp-ADb"/>
+                                <exclude reference="7fx-Yy-zny"/>
+                                <exclude reference="tg8-gZ-3hp"/>
+                                <exclude reference="a2g-he-S7z"/>
+                                <exclude reference="jAv-kB-ev3"/>
+                                <exclude reference="Ycv-Zt-z2p"/>
+                                <exclude reference="fUq-zr-oHP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GqH-7G-cJf"/>
+                                <include reference="9tf-fw-Q07"/>
+                                <include reference="Dl2-ck-aVR"/>
+                                <include reference="Qcf-Fg-7rD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ScE-Ir-dUH"/>
+                                <include reference="cRe-pp-ADb"/>
+                                <include reference="7fx-Yy-zny"/>
+                                <include reference="tg8-gZ-3hp"/>
+                                <include reference="a2g-he-S7z"/>
+                                <include reference="jAv-kB-ev3"/>
+                                <include reference="Ycv-Zt-z2p"/>
+                                <include reference="fUq-zr-oHP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PH9-qm-1Tx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="465.75"/>
+        </scene>
+    </scenes>
+</document>

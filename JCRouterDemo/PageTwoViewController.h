@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PageTwoViewController.h
 //  JCRouterDemo
 //
 //  Created by seris-Jam on 16/10/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PageTwoViewController : UIViewController
 
 @end
-

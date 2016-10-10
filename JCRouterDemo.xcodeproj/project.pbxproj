@@ -9,10 +9,20 @@
 /* Begin PBXBuildFile section */
 		391AD5EA1DAB2A1A00CC8C2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD5E91DAB2A1A00CC8C2F /* main.m */; };
 		391AD5ED1DAB2A1A00CC8C2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD5EC1DAB2A1A00CC8C2F /* AppDelegate.m */; };
-		391AD5F01DAB2A1A00CC8C2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD5EF1DAB2A1A00CC8C2F /* ViewController.m */; };
 		391AD5F31DAB2A1A00CC8C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391AD5F11DAB2A1A00CC8C2F /* Main.storyboard */; };
 		391AD5F51DAB2A1A00CC8C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391AD5F41DAB2A1A00CC8C2F /* Assets.xcassets */; };
 		391AD5F81DAB2A1A00CC8C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391AD5F61DAB2A1A00CC8C2F /* LaunchScreen.storyboard */; };
+		391AD6001DAB2A3000CC8C2F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 391AD5FF1DAB2A3000CC8C2F /* Default-568h@2x.png */; };
+		391AD6061DAB2A5A00CC8C2F /* JCRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD6031DAB2A5A00CC8C2F /* JCRouter.m */; };
+		391AD6071DAB2A5A00CC8C2F /* JCRouterParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD6051DAB2A5A00CC8C2F /* JCRouterParams.m */; };
+		391AD60A1DAB2AF100CC8C2F /* JCRouterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD6091DAB2AF100CC8C2F /* JCRouterTableViewController.m */; };
+		391AD60C1DAB2BE900CC8C2F /* DemoPageOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391AD60B1DAB2BE900CC8C2F /* DemoPageOne.storyboard */; };
+		391AD60F1DAB2C0000CC8C2F /* PageOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD60E1DAB2C0000CC8C2F /* PageOneViewController.m */; };
+		391AD6121DAB2EF200CC8C2F /* PageTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD6111DAB2EF200CC8C2F /* PageTwoViewController.m */; };
+		391AD61F1DAB33CA00CC8C2F /* PageThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD61D1DAB33CA00CC8C2F /* PageThreeViewController.m */; };
+		391AD6221DAB341F00CC8C2F /* DemoPageThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391AD6211DAB341F00CC8C2F /* DemoPageThree.xib */; };
+		391AD6241DAB410600CC8C2F /* PresentPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391AD6231DAB410600CC8C2F /* PresentPage.storyboard */; };
+		391AD6271DAB411500CC8C2F /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AD6261DAB411500CC8C2F /* PresentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +30,28 @@
 		391AD5E91DAB2A1A00CC8C2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		391AD5EB1DAB2A1A00CC8C2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		391AD5EC1DAB2A1A00CC8C2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		391AD5EE1DAB2A1A00CC8C2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		391AD5EF1DAB2A1A00CC8C2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		391AD5F21DAB2A1A00CC8C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		391AD5F41DAB2A1A00CC8C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		391AD5F71DAB2A1A00CC8C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		391AD5F91DAB2A1A00CC8C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391AD5FF1DAB2A3000CC8C2F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		391AD6021DAB2A5A00CC8C2F /* JCRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRouter.h; sourceTree = "<group>"; };
+		391AD6031DAB2A5A00CC8C2F /* JCRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRouter.m; sourceTree = "<group>"; };
+		391AD6041DAB2A5A00CC8C2F /* JCRouterParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRouterParams.h; sourceTree = "<group>"; };
+		391AD6051DAB2A5A00CC8C2F /* JCRouterParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRouterParams.m; sourceTree = "<group>"; };
+		391AD6081DAB2AF100CC8C2F /* JCRouterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRouterTableViewController.h; sourceTree = "<group>"; };
+		391AD6091DAB2AF100CC8C2F /* JCRouterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRouterTableViewController.m; sourceTree = "<group>"; };
+		391AD60B1DAB2BE900CC8C2F /* DemoPageOne.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoPageOne.storyboard; sourceTree = "<group>"; };
+		391AD60D1DAB2C0000CC8C2F /* PageOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageOneViewController.h; sourceTree = "<group>"; };
+		391AD60E1DAB2C0000CC8C2F /* PageOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageOneViewController.m; sourceTree = "<group>"; };
+		391AD6101DAB2EF200CC8C2F /* PageTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTwoViewController.h; sourceTree = "<group>"; };
+		391AD6111DAB2EF200CC8C2F /* PageTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTwoViewController.m; sourceTree = "<group>"; };
+		391AD61C1DAB33CA00CC8C2F /* PageThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageThreeViewController.h; sourceTree = "<group>"; };
+		391AD61D1DAB33CA00CC8C2F /* PageThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageThreeViewController.m; sourceTree = "<group>"; };
+		391AD6211DAB341F00CC8C2F /* DemoPageThree.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoPageThree.xib; sourceTree = "<group>"; };
+		391AD6231DAB410600CC8C2F /* PresentPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PresentPage.storyboard; sourceTree = "<group>"; };
+		391AD6251DAB411500CC8C2F /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		391AD6261DAB411500CC8C2F /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +68,8 @@
 		391AD5DC1DAB2A1A00CC8C2F = {
 			isa = PBXGroup;
 			children = (
+				391AD5FF1DAB2A3000CC8C2F /* Default-568h@2x.png */,
+				391AD6011DAB2A5A00CC8C2F /* JCRouter */,
 				391AD5E71DAB2A1A00CC8C2F /* JCRouterDemo */,
 				391AD5E61DAB2A1A00CC8C2F /* Products */,
 			);
@@ -60,9 +88,20 @@
 			children = (
 				391AD5EB1DAB2A1A00CC8C2F /* AppDelegate.h */,
 				391AD5EC1DAB2A1A00CC8C2F /* AppDelegate.m */,
-				391AD5EE1DAB2A1A00CC8C2F /* ViewController.h */,
-				391AD5EF1DAB2A1A00CC8C2F /* ViewController.m */,
+				391AD6081DAB2AF100CC8C2F /* JCRouterTableViewController.h */,
+				391AD6091DAB2AF100CC8C2F /* JCRouterTableViewController.m */,
 				391AD5F11DAB2A1A00CC8C2F /* Main.storyboard */,
+				391AD60D1DAB2C0000CC8C2F /* PageOneViewController.h */,
+				391AD60E1DAB2C0000CC8C2F /* PageOneViewController.m */,
+				391AD60B1DAB2BE900CC8C2F /* DemoPageOne.storyboard */,
+				391AD6101DAB2EF200CC8C2F /* PageTwoViewController.h */,
+				391AD6111DAB2EF200CC8C2F /* PageTwoViewController.m */,
+				391AD61C1DAB33CA00CC8C2F /* PageThreeViewController.h */,
+				391AD61D1DAB33CA00CC8C2F /* PageThreeViewController.m */,
+				391AD6211DAB341F00CC8C2F /* DemoPageThree.xib */,
+				391AD6251DAB411500CC8C2F /* PresentViewController.h */,
+				391AD6261DAB411500CC8C2F /* PresentViewController.m */,
+				391AD6231DAB410600CC8C2F /* PresentPage.storyboard */,
 				391AD5F41DAB2A1A00CC8C2F /* Assets.xcassets */,
 				391AD5F61DAB2A1A00CC8C2F /* LaunchScreen.storyboard */,
 				391AD5F91DAB2A1A00CC8C2F /* Info.plist */,
@@ -77,6 +116,17 @@
 				391AD5E91DAB2A1A00CC8C2F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		391AD6011DAB2A5A00CC8C2F /* JCRouter */ = {
+			isa = PBXGroup;
+			children = (
+				391AD6021DAB2A5A00CC8C2F /* JCRouter.h */,
+				391AD6031DAB2A5A00CC8C2F /* JCRouter.m */,
+				391AD6041DAB2A5A00CC8C2F /* JCRouterParams.h */,
+				391AD6051DAB2A5A00CC8C2F /* JCRouterParams.m */,
+			);
+			path = JCRouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				391AD5F81DAB2A1A00CC8C2F /* LaunchScreen.storyboard in Resources */,
+				391AD6001DAB2A3000CC8C2F /* Default-568h@2x.png in Resources */,
+				391AD6221DAB341F00CC8C2F /* DemoPageThree.xib in Resources */,
 				391AD5F51DAB2A1A00CC8C2F /* Assets.xcassets in Resources */,
+				391AD6241DAB410600CC8C2F /* PresentPage.storyboard in Resources */,
 				391AD5F31DAB2A1A00CC8C2F /* Main.storyboard in Resources */,
+				391AD60C1DAB2BE900CC8C2F /* DemoPageOne.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +203,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				391AD5F01DAB2A1A00CC8C2F /* ViewController.m in Sources */,
+				391AD61F1DAB33CA00CC8C2F /* PageThreeViewController.m in Sources */,
+				391AD6071DAB2A5A00CC8C2F /* JCRouterParams.m in Sources */,
 				391AD5ED1DAB2A1A00CC8C2F /* AppDelegate.m in Sources */,
+				391AD60A1DAB2AF100CC8C2F /* JCRouterTableViewController.m in Sources */,
 				391AD5EA1DAB2A1A00CC8C2F /* main.m in Sources */,
+				391AD60F1DAB2C0000CC8C2F /* PageOneViewController.m in Sources */,
+				391AD6061DAB2A5A00CC8C2F /* JCRouter.m in Sources */,
+				391AD6121DAB2EF200CC8C2F /* PageTwoViewController.m in Sources */,
+				391AD6271DAB411500CC8C2F /* PresentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +324,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JCRouterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jam.JCRouterDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlingmao.jiuwei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -275,8 +336,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JCRouterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jam.JCRouterDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlingmao.jiuwei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
