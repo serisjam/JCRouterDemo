@@ -146,7 +146,7 @@
 }
 
 - (void)dismissViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion {
-    [self dismissViewControllerWithIndex:1 animated:animated completion:completion];
+    [self dismissViewControllerWithIndex:0 animated:animated completion:completion];
 }
 
 - (void)dismissViewControllerWithIndex:(NSInteger)index animated:(BOOL)animated completion:(void (^)(void))completion {
