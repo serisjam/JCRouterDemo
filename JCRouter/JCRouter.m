@@ -83,6 +83,24 @@
     [self.routes setObject:controllerClass forKey:key];
 }
 
+- (__kindof UIViewController *)mapObjectForKey:(NSString *)key withExtraParams:(NSDictionary *)extraParams {
+    if (!key) {
+        @throw [NSException exceptionWithName:@"映射路由不能创建"
+                                       reason:@"路由映射关键值不能为空"
+                                     userInfo:nil];
+        return nil;
+    }
+    
+    JCRouterParams *routerParams = [self routerParamsForUrl:key withextraParams:extraParams];
+    UIViewController *controller = [self controllerForRouterOption:routerParams];
+    
+    return controller;
+}
+
+- (__kindof UIViewController *)currentViewController {
+    return self.rootViewController;
+}
+
 - (void)pushURL:(NSString *)urlString {
     [self pushURL:urlString extraParams:nil];
 }
@@ -96,7 +114,7 @@
     UIViewController *controller = [self controllerForRouterOption:routerParams];
     
     if (self.currentNavigationViewController) {
-        [self.currentNavigationViewController pushViewController:controller animated:YES];
+        [self.currentNavigationViewController pushViewController:controller animated:animated];
     } else {
         UINavigationController *navc = [[self.defaultNavigationClass alloc] initWithRootViewController:controller];
         self.applicationDelegate.window.rootViewController = navc;
@@ -116,6 +134,37 @@
             return ;
         }
     }
+}
+
+- (void)pushURL:(NSString *)urlString extraParams:(NSDictionary *)extraParams withIndex:(NSInteger)index animated:(BOOL)animated {
+    
+    [self pushURL:urlString extraParams:extraParams animated:animated];
+    if (index <= 0) return;
+    //TODO 以后改为切面编程 ，切didappear
+    if (animated) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.33 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self removeViewControllerWithIndex:index];
+        });
+        return;
+    }
+    
+    [self removeViewControllerWithIndex:index];
+}
+
+- (void)removeViewControllerWithIndex:(NSInteger)index {
+    if (self.currentNavigationViewController) {
+        NSMutableArray *viewControllers =  [NSMutableArray arrayWithArray:[self.currentNavigationViewController viewControllers]];
+        NSInteger count = [[self.currentNavigationViewController viewControllers] count];
+        if (count > index) {
+            [viewControllers removeObjectsInRange:NSMakeRange(count - index -1, index)];
+            [self.currentNavigationViewController setViewControllers:viewControllers animated:NO];
+        }
+    }
+}
+
+
+- (void)popToRootViewControllerAnimated:(BOOL)animated {
+    [self.currentNavigationViewController popToRootViewControllerAnimated:animated];
 }
 
 - (void)presentURL:(NSString *)urlString completion:(void (^)(void))completion {
@@ -155,6 +204,26 @@
         while (index > 0) {
             rootVC = rootVC.presentingViewController;
             index -= 1;
+        }
+        [rootVC dismissViewControllerAnimated:YES completion:completion];
+    }
+    
+    if (!rootVC.presentedViewController) {
+        return ;
+    }
+}
+
+- (void)dismissToRootViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion {
+    UIViewController *rootVC = self.rootViewController;
+    if (rootVC) {
+        NSInteger index = 1;
+        while (index) {
+            if (!rootVC.presentingViewController) {
+                index = 0;
+                break;
+            }
+            rootVC = rootVC.presentingViewController;
+            
         }
         [rootVC dismissViewControllerAnimated:YES completion:completion];
     }
