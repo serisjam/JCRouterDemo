@@ -121,6 +121,33 @@
     }
 }
 
+-(void)popToURL:(NSString *)urlString animated:(BOOL)animated
+{
+    __block NSString *className = nil;
+    [self.routes.allKeys enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj containsString:urlString]) {
+            className = NSStringFromClass(self.routes[obj]);
+            *stop = YES;
+        }
+    }];
+    if (!className)
+    {
+        [self popViewControllerAnimated:YES];
+        return;
+    }
+    [[self currentNavigationViewController].viewControllers enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIViewController *vc = obj.childViewControllers.firstObject.childViewControllers.firstObject;
+        if ([className isEqualToString:NSStringFromClass([vc class])]) {
+            NSInteger popIndex = [self currentNavigationViewController].viewControllers.count -(idx+1);
+            if (popIndex < 1) {
+                popIndex = 1;
+            }
+            [self popViewControllerWithIndex:popIndex animated:YES];
+            *stop = YES;
+        }
+    }];
+}
+
 - (void)popViewControllerAnimated:(BOOL)animated {
     [self popViewControllerWithIndex:1 animated:animated];
 }

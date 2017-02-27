@@ -28,6 +28,8 @@
 - (void)presentURL:(NSString *)urlString extraParams:(NSDictionary *)extraParams withNavigationClass:(Class)navigationClass completion:(void (^)(void))completion;
 - (void)presentURL:(NSString *)urlString extraParams:(NSDictionary *)extraParams withNavigationClass:(Class)navigationClass animated:(BOOL)animated completion:(void (^)(void))completion;
 
+//回到指定的vc，参数urlString只需要写路由名就行，不用带参数
+- (void)popToURL:(NSString *)urlString animated:(BOOL)animated;
 - (void)popViewControllerAnimated:(BOOL)animated;
 //回跳到第几层, A->B->C,那么当index为1时跳转到B， index为2跳转到A
 - (void)popViewControllerWithIndex:(NSInteger)index animated:(BOOL)animated;
